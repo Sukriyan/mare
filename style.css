@@ -1,0 +1,104 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+:root {
+    --bg-primary:  	#f6b092;
+    --bg-secondary: pink;
+    --text-primary: #222222;
+    --text-secondary: blue;
+    --icons-bg-primary: red;
+    --icons-bg-secondary: aqua;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-primary);
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    border: 2px solid white;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 30px;
+    margin: 30px;
+    box-shadow: 20px 29px 14px -7px rgba(0,0,0,0.71);
+-webkit-box-shadow: 20px 29px 14px -7px rgba(0,0,0,0.71);
+-moz-box-shadow: 20px 29px 14px -7px rgba(0,0,0,0.71);
+}
+
+.text-center {
+    text-align: center; 
+    text-decoration: none;
+    caret-color: black;
+}
+
+.icons {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: var(--icons-bg-primary)
+}
+
+.title {
+    font-size: 2em;
+}
+
+.description {
+    font-size: 0,7em;
+}
+
+.btn {
+    font-size: 50pxpx;
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+
+.foto {
+    height: 50%;
+    width: 30%
+}
+
+.tulisan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tulisannya {
+    position: absolute;
+    top: 60%;
+    left: 53.5%;
+    transform: translate(-50%, -50%);
+}
+
+.fotonya {
+    position: absolute;
+    top: 70%;
+    left: 83.5%;
+    transform: translate(-50%, -50%);
+}
