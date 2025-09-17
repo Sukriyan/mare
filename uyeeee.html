@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kotak Ikon Horizontal</title>
+
+<!-- Font Awesome CDN untuk ikon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+  body{
+    margin:0;
+    min-height:100vh;
+    background:#f0f0f0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+  /* Kontainer horizontal */
+  .box-list{
+    display:flex;
+    gap:15px;                 /* jarak antar kotak */
+  }
+
+  /* Kotak */
+  .box{
+    width:80px;
+    height:80px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:transform 0.2s, box-shadow 0.2s;
+  }
+
+  .box:hover{
+    transform:scale(1.1);
+    box-shadow:0 8px 18px rgba(0,0,0,0.2);
+  }
+
+  /* Ukuran dan warna ikon */
+  .box i{
+    font-size:36px;
+    color:#333;
+  }
+
+  /* warna khusus per ikon */
+  .whatsapp i{ color:#25D366; }
+  .instagram i{ color:#E1306C; }
+  .facebook i{ color:#1877F2; }
+</style>
+</head>
+<body>
+
+<div class="box-list">
+  <!-- WhatsApp: ganti nomor dengan format internasional tanpa + -->
+  <a class="box whatsapp" href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a class="box instagram" href="https://instagram.com/username_anda" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- Facebook -->
+  <a class="box facebook" href="https://facebook.com/username_anda" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <!-- Kotak kosong -->
+  <div class="box"><!-- sengaja kosong --></div>
+</div>
+
+</body>
+</html>
